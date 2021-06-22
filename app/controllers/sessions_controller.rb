@@ -8,7 +8,7 @@ end
 
 def create 
     if 
-        params[:name].nil? || params[:name].empty?
+        params[:name].blank?
         redirect_to "/login"
 
     else 
